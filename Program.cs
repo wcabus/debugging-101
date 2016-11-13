@@ -10,6 +10,13 @@ namespace Debugging101
     {
         static void Main(string[] args)
         {
+            DoSomeStuff();
+        }
+
+        static void DoSomeStuff()
+        {
+            var value = 42;
+            Console.WriteLine($"This will not end well: {value / 0}");
         }
     }
 }
